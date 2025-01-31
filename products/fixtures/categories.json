@@ -70,5 +70,397 @@
         "name": "jumbo_cards",
         "friendly_name": "Jumbo Cards"
       }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_journey_togerther",
+        "friendly_name": "Scarlet and Violet Journey Together"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_prismatic_evolutions",
+        "friendly_name": "Scarlet and Violet Prismatic Evolutions"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_paldean_fates",
+        "friendly_name": "Scarlet and Violet Paldean Fates"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_stellar_crown",
+        "friendly_name": "Scarlet and Violet Stellar Crown"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_shrouded_fable",
+        "friendly_name": "Scarlet and Violet Shrouded Fable"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_twilight_masquerade",
+        "friendly_name": "Scarlet and Violet Twilight Masquerade"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_temporal_forces",
+        "friendly_name": "Scarlet and Violet Temporal Forces"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_paradox_rift",
+        "friendly_name": "Scarlet and Violet Paradox Rift"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_pokemon_151",
+        "friendly_name": "Scarlet and Violet 151"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_obsidian_flame",
+        "friendly_name": "Scarlet and Violet Obsidian Flame"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_paldea_evolved",
+        "friendly_name": "Scarlet and Violet Paldea Evolved"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.category",
+      "fields": {
+        "name": "sv_base_set",
+        "friendly_name": "Scarlet and Violet (Base Set)"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.category",
+      "fields": {
+        "name": "tcg_classic",
+        "friendly_name": "TCG Classic"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_crown_zenith",
+        "friendly_name": "Sword and Shield Crown Zenith"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_silver_tempest",
+        "friendly_name": "Sword and Shield Silver Tempest"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_lost_origin",
+        "friendly_name": "Sword and Shield Lost Origin"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.category",
+      "fields": {
+        "name": "pokemon_go",
+        "friendly_name": "Pokemon GO"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_astral_radiance",
+        "friendly_name": "Sword and Shield Astral Radiance"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_brilliant_stars",
+        "friendly_name": "Sword and Shield Brilliant Stars"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_fusion_strike",
+        "friendly_name": "Sword and Shield Fusion Strike"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.category",
+      "fields": {
+        "name": "celebrations",
+        "friendly_name": "celebrations"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_evolving_skies",
+        "friendly_name": "Sword and Shield Evolving Skies"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_battle_styles",
+        "friendly_name": "Sword and Shield Battle Styles"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_chilling_reign",
+        "friendly_name": "Sword and Shield Chilling Reign"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_vivid_voltage",
+        "friendly_name": "Sword and Shield Vivid Voltage"
+      }
+    },
+    {
+      "pk": 29,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_darkness_ablaze",
+        "friendly_name": "Sword and Shield Darkness Ablaze"
+      }
+    },
+    {
+      "pk": 30,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_rebel_clash",
+        "friendly_name": "Sword and Shield Rebel Clash"
+      }
+    },
+    {
+      "pk": 31,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_base_set",
+        "friendly_name": "Sword and Shield Base Set"
+      }
+    },
+    {
+      "pk": 32,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_shining_fates",
+        "friendly_name": "Sword and Shield Shining Fates"
+      }
+    },
+    {
+      "pk": 33,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_promo",
+        "friendly_name": "Sword and Shield Promo"
+      }
+    },
+    {
+      "pk": 34,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_champions_path",
+        "friendly_name": "Sword and Shield Champions Path"
+      }
+    },
+    {
+      "pk": 35,
+      "model": "products.category",
+      "fields": {
+        "name": "swsh_hidden_fates",
+        "friendly_name": "Sword and Shield Hidden Fates"
+      }
+    },
+    {
+      "pk": 36,
+      "model": "products.category",
+      "fields": {
+        "name": "pokemon_booster_pack",
+        "friendly_name": "Pokemon Booster Pack"
+      }
+    },
+    {
+      "pk": 37,
+      "model": "products.category",
+      "fields": {
+        "name": "pokemon_booster_box",
+        "friendly_name": "Pokemon Booster Box"
+      }
+    },
+    {
+      "pk": 38,
+      "model": "products.category",
+      "fields": {
+        "name": "elite_trainer_box",
+        "friendly_name": "Elite Trainer Box"
+      }
+    },
+    {
+      "pk": 39,
+      "model": "products.category",
+      "fields": {
+        "name": "collection_box_set",
+        "friendly_name": "Collection Box Set"
+      }
+    },
+    {
+      "pk": 40,
+      "model": "products.category",
+      "fields": {
+        "name": "deck",
+        "friendly_name": "Decks"
+      }
+    },
+    {
+      "pk": 41,
+      "model": "products.category",
+      "fields": {
+        "name": "tin",
+        "friendly_name": "Tin"
+      }
+    },
+    {
+      "pk": 42,
+      "model": "products.category",
+      "fields": {
+        "name": "blister",
+        "friendly_name": "Blister"
+      }
+    },
+    {
+      "pk": 43,
+      "model": "products.category",
+      "fields": {
+        "name": "plush",
+        "friendly_name": "Plush"
+      }
+    },
+    {
+      "pk": 44,
+      "model": "products.category",
+      "fields": {
+        "name": "toy",
+        "friendly_name": "Toy"
+      }
+    },
+    {
+      "pk": 45,
+      "model": "products.category",
+      "fields": {
+        "name": "games",
+        "friendly_name": "Games"
+      }
+    },
+    {
+      "pk": 46,
+      "model": "products.category",
+      "fields": {
+        "name": "pin_badges",
+        "friendly_name": "Pin Badges"
+      }
+    },
+    {
+      "pk": 47,
+      "model": "products.category",
+      "fields": {
+        "name": "apparel",
+        "friendly_name": "Apparel"
+      }
+    },
+    {
+      "pk": 48,
+      "model": "products.category",
+      "fields": {
+        "name": "poster",
+        "friendly_name": "Poster"
+      }
+    },
+    {
+      "pk": 49,
+      "model": "products.category",
+      "fields": {
+        "name": "magic_the_gathering",
+        "friendly_name": "Magic The Gathering"
+      }
+    },
+    {
+      "pk": 50,
+      "model": "products.category",
+      "fields": {
+        "name": "yu_gi_oh",
+        "friendly_name": "Yu-Gi-Oh"
+      }
+    },
+    {
+      "pk": 51,
+      "model": "products.category",
+      "fields": {
+        "name": "disney_lorcana",
+        "friendly_name": "Disney Lorcana"
+      }
+    },
+    {
+      "pk": 52,
+      "model": "products.category",
+      "fields": {
+        "name": "one_piece_card_game",
+        "friendly_name": "One Piece Card Game"
+      }
     }
   ]
