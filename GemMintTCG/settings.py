@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'home',
+    'products',
 
     # The following apps are required by django-allauth:
     'allauth',

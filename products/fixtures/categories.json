@@ -1,0 +1,74 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "pokemon_singles_english",
+        "friendly_name": "Pokemon Singles English"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "pokemon_reverse_english",
+        "friendly_name": "Pokemon Reverse Holo English"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "pokemon_singles_foreign",
+        "friendly_name": "Pokemon Singles English"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "pokemon_reverse_foreign",
+        "friendly_name": "Pokemon Reverse Holo Foreign"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "code_cards",
+        "friendly_name": "Code Cards"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "promotional_cards",
+        "friendly_name": "Promotional Cards"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "energy_cards",
+        "friendly_name": "Energy Cards"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "full_art_cards",
+        "friendly_name": "Full Art Cards"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "jumbo_cards",
+        "friendly_name": "Jumbo Cards"
+      }
+    }
+  ]
