@@ -1,212 +1,212 @@
 [
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00001",
-        "name": "Base Set Booster Pack",
-        "description": "A vintage sealed booster pack from the iconic Base Set of the Pokémon Trading Card Game. Perfect for collectors and players alike.",
-        "price": 499.99,
-        "category": 36,
-        "rating": 5.0,
-        "image_url": "https://example.com/images/base_set_booster_pack.jpg",
-        "image": "base_set_booster_pack.jpg"
-      }
-    },
-    {
-      "pk": 2,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00002",
-        "name": "Evolving Skies Booster Pack",
-        "description": "A sealed booster pack from the Sword and Shield Evolving Skies expansion. Featuring powerful Dragon-type Pokémon!",
-        "price": 4.99,
-        "category": 36,
-        "rating": 4.8,
-        "image_url": "https://example.com/images/evolving_skies_booster_pack.jpg",
-        "image": "evolving_skies_booster_pack.jpg"
-      }
-    },
-    {
-      "pk": 3,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00003",
-        "name": "Brilliant Stars Booster Pack",
-        "description": "Unleash the brilliance of Arceus with this sealed booster pack from the Sword and Shield Brilliant Stars expansion!",
-        "price": 5.49,
-        "category": 36,
-        "rating": 4.9,
-        "image_url": "https://example.com/images/brilliant_stars_booster_pack.jpg",
-        "image": "brilliant_stars_booster_pack.jpg"
-      }
-    },
-    {
-      "pk": 4,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00004",
-        "name": "V Battle Deck - Blastoise",
-        "description": "Get battle-ready with this Blastoise-themed deck, perfect for new and experienced players alike.",
-        "price": 14.99,
-        "category": 40,
-        "rating": 4.7,
-        "image_url": "https://example.com/images/blastoise_battle_deck.jpg",
-        "image": "blastoise_battle_deck.jpg"
-      }
-    },
-    {
-      "pk": 5,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00005",
-        "name": "Theme Deck - Charizard",
-        "description": "Blaze through your opponents with this pre-built Charizard-themed deck, designed for fiery battles.",
-        "price": 19.99,
-        "category": 40,
-        "rating": 4.9,
-        "image_url": "https://example.com/images/charizard_theme_deck.jpg",
-        "image": "charizard_theme_deck.jpg"
-      }
-    },
-    {
-      "pk": 6,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00006",
-        "name": "V Battle Deck - Venusaur",
-        "description": "Take control of the battlefield with Venusaur in this strategy-packed V Battle Deck.",
-        "price": 14.99,
-        "category": 40,
-        "rating": 4.6,
-        "image_url": "https://example.com/images/venusaur_battle_deck.jpg",
-        "image": "venusaur_battle_deck.jpg"
-      }
-    },
-    {
-      "pk": 7,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00007",
-        "name": "Hidden Fates Tin - Charizard GX",
-        "description": "A stunning tin featuring Charizard GX from the Hidden Fates expansion, including booster packs and a promo card.",
-        "price": 29.99,
-        "category": 41,
-        "rating": 4.9,
-        "image_url": "https://example.com/images/charizard_hidden_fates_tin.jpg",
-        "image": "charizard_hidden_fates_tin.jpg"
-      }
-    },
-    {
-      "pk": 8,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00008",
-        "name": "Eevee Evolutions Tin - Vaporeon V",
-        "description": "This collectible tin includes a Vaporeon V promo card and booster packs to enhance your collection.",
-        "price": 24.99,
-        "category": 41,
-        "rating": 4.8,
-        "image_url": "https://example.com/images/vaporeon_evolutions_tin.jpg",
-        "image": "vaporeon_evolutions_tin.jpg"
-      }
-    },
-    {
-      "pk": 9,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00009",
-        "name": "Hidden Fates Tin - Raichu GX",
-        "description": "Power up your game with the Raichu GX Hidden Fates tin, featuring a promo card and booster packs.",
-        "price": 29.99,
-        "category": 41,
-        "rating": 4.7,
-        "image_url": "https://example.com/images/raichu_hidden_fates_tin.jpg",
-        "image": "raichu_hidden_fates_tin.jpg"
-      }
-    },
-    {
-      "pk": 10,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00010",
-        "name": "Elite Trainer Box - Shining Fates",
-        "description": "A premium trainer box that includes booster packs, card sleeves, and a player's guide for the Shining Fates expansion.",
-        "price": 49.99,
-        "category": 42,
-        "rating": 4.9,
-        "image_url": "https://example.com/images/shining_fates_trainer_box.jpg",
-        "image": "shining_fates_trainer_box.jpg"
-      }
-    },
-    {
-      "pk": 11,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00011",
-        "name": "Elite Trainer Box - Celebrations",
-        "description": "Celebrate 25 years of Pokémon with this special Elite Trainer Box, featuring exclusive cards and collector's items.",
-        "price": 69.99,
-        "category": 42,
-        "rating": 5.0,
-        "image_url": "https://example.com/images/celebrations_trainer_box.jpg",
-        "image": "celebrations_trainer_box.jpg"
-      }
-    },
-    {
-      "pk": 12,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00012",
-        "name": "Elite Trainer Box - Evolving Skies",
-        "description": "Dive into the world of Evolving Skies with this Elite Trainer Box, packed with booster packs and game accessories.",
-        "price": 54.99,
-        "category": 42,
-        "rating": 4.8,
-        "image_url": "https://example.com/images/evolving_skies_trainer_box.jpg",
-        "image": "evolving_skies_trainer_box.jpg"
-      }
-    },
-    {
-      "pk": 13,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00013",
-        "name": "Pokémon TCG: Pikachu V Box",
-        "description": "A special Pikachu V box featuring a promo card, oversized card, and booster packs.",
-        "price": 19.99,
-        "category": 43,
-        "rating": 4.6,
-        "image_url": "https://example.com/images/pikachu_v_box.jpg",
-        "image": "pikachu_v_box.jpg"
-      }
-    },
-    {
-      "pk": 14,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00014",
-        "name": "Pokémon TCG: Lucario VSTAR Box",
-        "description": "Unleash the power of Lucario with this VSTAR box, featuring promo cards and exclusive booster packs.",
-        "price": 29.99,
-        "category": 43,
-        "rating": 4.9,
-        "image_url": "https://example.com/images/lucario_vstar_box.jpg",
-        "image": "lucario_vstar_box.jpg"
-      }
-    },
-    {
-      "pk": 15,
-      "model": "products.product",
-      "fields": {
-        "sku": "pkm00015",
-        "name": "Pokémon GO Elite Trainer Box",
-        "description": "A special Elite Trainer Box celebrating the Pokémon GO expansion, including exclusive cards and game accessories.",
-        "price": 59.99,
-        "category": 42,
-        "rating": 4.7,
-        "image_url": "https://example.com/images/pokemon_go_trainer_box.jpg",
-        "image": "pokemon_go_trainer_box.jpg"
-      }
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00001",
+      "name": "Stellar Crown Booster Pack",
+      "description": "A sealed booster pack from the Scarlet and Violet Stellar Crown expansion. Featuring a new stellar type Pokémon Terapagos!",
+      "price": 4.29,
+      "category": 42,
+      "rating": 5.0,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/418950/images/1737921/1623346139-19516900__83849.1723613631.386.513.png?c=1",
+      "image": "stellar_crown_booster_pack.webp"
     }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00002",
+      "name": "Evolving Skies Booster Pack",
+      "description": "A sealed booster pack from the Sword and Shield Evolving Skies expansion. Featuring powerful Dragon-type Pokémon!",
+      "price": 4.99,
+      "category": 42,
+      "rating": 4.8,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/418950/images/1737921/1623346139-19516900__83849.1723613631.386.513.png?c=1",
+      "image": "evolving_skies_booster_pack.webp"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00003",
+      "name": "Brilliant Stars Booster Pack",
+      "description": "Unleash the brilliance of Arceus with this sealed booster pack from the Sword and Shield Brilliant Stars expansion!",
+      "price": 5.49,
+      "category": 42,
+      "rating": 4.9,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/425766/images/1739786/Sword-Shield-Brilliant-Stars-Booster_Arceus_VSTAR_EN-656x1200-bd93c0f__23348.1723626946.386.513.jpg?c=1",
+      "image": "brilliant_stars_booster_pack.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00004",
+      "name": "V Battle Deck - Blastoise",
+      "description": "Get battle-ready with this Blastoise-themed deck, perfect for new and experienced players alike.",
+      "price": 14.99,
+      "category": 46,
+      "rating": 4.7,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/160526/images/1571185/1609084538-57595000__41874.1696659079.386.513.jpg?c=1",
+      "image": "blastoise_battle_deck.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00005",
+      "name": "Theme Deck - Charizard",
+      "description": "Blaze through your opponents with this pre-built Charizard-themed deck, designed for fiery battles.",
+      "price": 19.99,
+      "category": 46,
+      "rating": 4.9,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/160494/images/1810353/1599137141-16499300__04059.1724859004.386.513.jpg?c=1",
+      "image": "charizard_theme_deck.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00006",
+      "name": "Pokemon GO V Battle Deck - Melmetal V",
+      "description": "Pokemon GO V Battle Deck - Melmetal V includes a full 60 card deck,a paper playmat,a flip coin,cardboard damage counters,Code Card for the online game,and a cardboard deck box for storage.",
+      "price": 14.99,
+      "category": 46,
+      "rating": 4.6,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/images/stencil/1280x1280/products/439455/1798772/Pokemon_TCG_Pokemon_GO_Melmetal_V_Battle_Deck-copy-scaled__98539.1724441642.jpg?c=1",
+      "image": "melmetal_battle_deck.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00007",
+      "name": "Hidden Fates Tin - Charizard GX",
+      "description": "A stunning tin featuring Charizard GX from the Hidden Fates expansion, including booster packs and a promo card.",
+      "price": 29.99,
+      "category": 47,
+      "rating": 4.9,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/160783/images/529900/1560419736-53712500__59465.1649727775.386.513.jpg?c=1",
+      "image": "charizard_hidden_fates_tin.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00008",
+      "name": "Eevee Evolutions Tin - Vaporeon V",
+      "description": "This collectible tin includes a Vaporeon V promo card and booster packs to enhance your collection.",
+      "price": 24.99,
+      "category": 47,
+      "rating": 4.8,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/419850/images/1846490/1629288326-83462500__15867.1727162529.386.513.jpg?c=1.jpg",
+      "image": "vaporeon_evolutions_tin.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00009",
+      "name": "Hidden Fates Tin - Raichu GX",
+      "description": "Power up your game with the Raichu GX Hidden Fates tin, featuring a promo card and booster packs.",
+      "price": 29.99,
+      "category": 47,
+      "rating": 4.7,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/160785/images/1770009/1560419731-58657700__29145.1723887858.386.513.jpg?c=1",
+      "image": "raichu_hidden_fates_tin.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00010",
+      "name": "Elite Trainer Box - Shining Fates",
+      "description": "A premium trainer box that includes booster packs, card sleeves, and a player's guide for the Shining Fates expansion.",
+      "price": 49.99,
+      "category": 44,
+      "rating": 4.9,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/160590/images/1739604/etb-1__23209.1723625960.386.513.jpg?c=1",
+      "image": "shining_fates_trainer_box.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00011",
+      "name": "Elite Trainer Box - Celebrations",
+      "description": "Celebrate 25 years of Pokémon with this special Elite Trainer Box, featuring exclusive cards and collector's items.",
+      "price": 69.99,
+      "category": 44,
+      "rating": 5.0,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/420864/images/1736689/Celebrations-Collection-Elite-Trainer-Box_EN-2092x2000-1478e37__69258.1723603100.386.513.jpg?c=1",
+      "image": "celebrations_trainer_box.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00012",
+      "name": "Elite Trainer Box - Evolving Skies",
+      "description": "Dive into the world of Evolving Skies with this Elite Trainer Box, packed with booster packs and game accessories.",
+      "price": 54.99,
+      "category": 44,
+      "rating": 4.8,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/418952/images/1742270/1623346276-20396200__51446.1723654303.386.513.png?c=1",
+      "image": "evolving_skies_trainer_box_jolteon_leafeon_flareon_umbreon.webp"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00013",
+      "name": "Pokémon TCG: Pikachu V Box",
+      "description": "A special Pikachu V box featuring a promo card, oversized card, and booster packs.",
+      "price": 19.99,
+      "category": 45,
+      "rating": 4.6,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/160232/images/1822624/1607105177-18409800__36015.1725605564.386.513.jpg?c=1",
+      "image": "pikachu_v_box_shining_fates.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00014",
+      "name": "Pokémon TCG: Mimikyu EX Collection Box",
+      "description": "Unleash the power of Mimikyu with this EX box, featuring promo cards and exclusive booster packs.",
+      "price": 29.99,
+      "category": 45,
+      "rating": 4.9,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/images/stencil/1280x1280/products/461214/1740113/mimikyu_w_card_img__93094.1723628632.jpg?c=1",
+      "image": "mimikyu_ex_collection_box.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pkm00015",
+      "name": "Pokémon GO Elite Trainer Box",
+      "description": "A special Elite Trainer Box celebrating the Pokémon GO expansion, including exclusive cards and game accessories.",
+      "price": 59.99,
+      "category": 44,
+      "rating": 4.7,
+      "image_url": "https://cdn11.bigcommerce.com/s-b4ioc4fed9/products/439457/images/1739891/Pokemon_TCG_Pokemon_GO_Elite_Trainer_Box-copy-scaled__24344.1723627602.386.513.jpg?c=1",
+      "image": "pokemon_go_trainer_box.jpg"
+    }
+  }
 ]
