@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'home',
     'products',
+    'bag',
 
     # The following apps are required by django-allauth:
     'allauth',
