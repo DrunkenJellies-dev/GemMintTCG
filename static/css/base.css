@@ -104,49 +104,51 @@ a.category-badge > span.badge:hover {
   right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
   cursor: pointer;
 }
 
-/* Container for the thumbnail images */
+
 .thumbnail-images {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Spacing between thumbnails */
+  gap: 10px; 
   margin-top: 10px;
 }
 
-/* Style for each individual thumbnail */
+
 .thumbnail-image {
-  width: 60px; /* Adjust the width */
-  height: 60px; /* Adjust the height */
-  object-fit: cover; /* Ensures the images fit well within their dimensions */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Indicates the image is clickable */
-  transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition for hover effects */
+  width: 60px; 
+  height: 60px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: transform 0.3s ease, border 0.3s ease; 
 }
 
-/* Hover effect for the thumbnails */
+
 .thumbnail-image:hover {
-  transform: scale(1.1); /* Slightly enlarge the thumbnail when hovered */
-  border: 2px solid #007bff; /* Border color change on hover */
+  transform: scale(1.1); 
+  border: 2px solid #007bff; 
 }
 
-/* Active state for the selected thumbnail (when clicked) */
+
 .thumbnail-image.selected {
-  border: 2px solid #007bff; /* Highlight selected image with border */
-  opacity: 0.7; /* Optional: slightly fade the selected image for emphasis */
+  border: 2px solid #007bff; 
+  opacity: 0.7; 
 }
 
-/* Make sure the thumbnails stack properly on smaller screens */
+
 @media (max-width: 767px) {
   .thumbnail-images {
-    justify-content: flex-start; /* Align left on smaller screens */
+    justify-content: flex-start; 
     gap: 5px;
   }
 
   .thumbnail-image {
-    width: 50px; /* Smaller thumbnails on mobile */
+    width: 50px; 
     height: 50px;
   }
 }
