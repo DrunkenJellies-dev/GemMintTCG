@@ -110,15 +110,14 @@
         Pokémon Sealed Product
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="sealed-link">
-        <a href="" class="dropdown-item">Pokémon Booster Pack </a>
-        <a href="" class="dropdown-item">Pokémon Booster Box </a>
-        <a href="" class="dropdown-item">Elite Trainer Boxes </a>
-        <a href="" class="dropdown-item">Collection Box Set </a>
-        <a href="" class="dropdown-item">Decks</a>
-        <a href="" class="dropdown-item">Prerelease Packs </a>
-        <a href="" class="dropdown-item">Tins</a>
-        <a href="" class="dropdown-item">Blisters </a>
-        <a href="" class="dropdown-item">All Pokémon Sealed Product</a>
+        <a href="{% url 'products' %}?category=pokemon_booster_pack" class="dropdown-item">Pokémon Booster Pack </a>
+        <a href="{% url 'products' %}?category=pokemon_booster_box" class="dropdown-item">Pokémon Booster Box </a>
+        <a href="{% url 'products' %}?category=elite_trainer_box" class="dropdown-item">Elite Trainer Boxes </a>
+        <a href="{% url 'products' %}?category=collection_box_set" class="dropdown-item">Collection Box Set </a>
+        <a href="{% url 'products' %}?category=deck" class="dropdown-item">Decks</a>
+        <a href="{% url 'products' %}?category=tin" class="dropdown-item">Tins</a>
+        <a href="{% url 'products' %}?category=blister" class="dropdown-item">Blisters </a>
+        <a href="{% url 'products' %}?category=pokemon_booster_pack, pokemon_booster_box, elite_trainer_box, collection_box_set, deck, tin, blister" class="dropdown-item">All Pokémon Sealed Product</a>
       </div>
     </li>
 
