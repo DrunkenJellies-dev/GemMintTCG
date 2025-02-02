@@ -17,7 +17,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    categories = models.ManyToManyField('Category', blank=True)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
