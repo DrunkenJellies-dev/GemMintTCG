@@ -95,6 +95,50 @@ a.category-badge > span.badge:hover {
   cursor: pointer;
 }
 
+/* Container for the thumbnail images */
+.thumbnail-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Spacing between thumbnails */
+  margin-top: 10px;
+}
+
+/* Style for each individual thumbnail */
+.thumbnail-image {
+  width: 60px; /* Adjust the width */
+  height: 60px; /* Adjust the height */
+  object-fit: cover; /* Ensures the images fit well within their dimensions */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Indicates the image is clickable */
+  transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the thumbnails */
+.thumbnail-image:hover {
+  transform: scale(1.1); /* Slightly enlarge the thumbnail when hovered */
+  border: 2px solid #007bff; /* Border color change on hover */
+}
+
+/* Active state for the selected thumbnail (when clicked) */
+.thumbnail-image.selected {
+  border: 2px solid #007bff; /* Highlight selected image with border */
+  opacity: 0.7; /* Optional: slightly fade the selected image for emphasis */
+}
+
+/* Make sure the thumbnails stack properly on smaller screens */
+@media (max-width: 767px) {
+  .thumbnail-images {
+      justify-content: flex-start; /* Align left on smaller screens */
+      gap: 5px;
+  }
+
+  .thumbnail-image {
+      width: 50px; /* Smaller thumbnails on mobile */
+      height: 50px;
+  }
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

@@ -1,0 +1,137 @@
+[
+  {
+    "model": "products.productimage",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "image": "stellar_crown_booster_pack.webp",
+      "alt_text": "Stellar Crown Booster Pack"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 2,
+    "fields": {
+      "product": 2,
+      "image": "evolving_skies_booster_pack.webp",
+      "alt_text": "Evolving Skies Booster Pack"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 3,
+    "fields": {
+      "product": 3,
+      "image": "brilliant_stars_booster_pack.jpg",
+      "alt_text": "Brilliant Stars Booster Pack"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 4,
+    "fields": {
+      "product": 4,
+      "image": "blastoise_battle_deck.jpg",
+      "alt_text": "Blastoise Battle Deck"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 5,
+    "fields": {
+      "product": 5,
+      "image": "charizard_theme_deck.jpg",
+      "alt_text": "Charizard Theme Deck"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 6,
+    "fields": {
+      "product": 6,
+      "image": "melmetal_battle_deck.jpg",
+      "alt_text": "Melmetal Battle Deck"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 7,
+    "fields": {
+      "product": 7,
+      "image": "charizard_hidden_fates_tin.jpg",
+      "alt_text": "Charizard Hidden Fates Tin"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 8,
+    "fields": {
+      "product": 8,
+      "image": "vaporeon_evolutions_tin.jpg",
+      "alt_text": "Vaporeon Evolutions Tin"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 9,
+    "fields": {
+      "product": 9,
+      "image": "raichu_hidden_fates_tin.jpg",
+      "alt_text": "Raichu Hidden Fates Tin"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 10,
+    "fields": {
+      "product": 10,
+      "image": "shining_fates_trainer_box.jpg",
+      "alt_text": "Shining Fates Trainer Box"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 11,
+    "fields": {
+      "product": 11,
+      "image": "celebrations_trainer_box.jpg",
+      "alt_text": "Celebrations Trainer Box"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 12,
+    "fields": {
+      "product": 12,
+      "image": "evolving_skies_trainer_box_jolteon_leafeon_flareon_umbreon.webp",
+      "alt_text": "Evolving Skies Trainer Box (Jolteon, Leafeon, Flareon, Umbreon)"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 13,
+    "fields": {
+      "product": 13,
+      "image": "pikachu_v_box_shining_fates.jpg",
+      "alt_text": "Pikachu V Box (Shining Fates)"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 14,
+    "fields": {
+      "product": 14,
+      "image": "mimikyu_ex_collection_box.jpg",
+      "alt_text": "Mimikyu EX Collection Box"
+    }
+  },
+  {
+    "model": "products.productimage",
+    "pk": 15,
+    "fields": {
+      "product": 15,
+      "image": "pokemon_go_trainer_box.jpg",
+      "alt_text": "Pokemon GO Trainer Box"
+    }
+  }
+]

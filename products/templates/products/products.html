@@ -1,11 +1,14 @@
-{% extends 'base.html' %} {% load static %} {% block page_header %}
+{% extends 'base.html' %}
+{% load static %}
+{% block page_header %}
 <div class="container header-container">
   <div class="row">
     <div class="col"></div>
   </div>
 </div>
+{% endblock page_header %}
 
-{% endblock page_header %} {% block content %}
+{% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
   <div class="row">
@@ -45,7 +48,6 @@
         </div>
         <div class="col-12 col-md-6 order-md-first">
             <p class="text muted mt-3 text-center text-md-left">
-                
                 {% if search_term or current_categories or current_sorting != 'None_None' %}
                     <span class="small"><a href="{% url 'products' %}">Products Home</a>  |  </span>
                 {% endif %}
@@ -57,14 +59,32 @@
         {% for product in products %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
           <div class="card h-100 border-0">
-            {% if product.image %}
-            <a href="{% url 'product_detail' product.id %}">
+            {% if product.images.all %}
+            <div class="main-image-wrapper">
+              <a href="{% url 'product_detail' product.id %}">
+                <img
+                  id="main-product-image"
+                  class="card-img-top img-fluid product-image d-block mx-auto"
+                  src="{{ product.images.first.image.url }}"
+                  alt="{{ product.name }}"
+                />
+              </a>
+            </div>
+            {% if product.images.count > 1 %}
+            <div class="thumbnail-images d-flex justify-content-center mt-2">
+              {% for image in product.images.all %}
               <img
-                class="card-img-top img-fluid product-image d-block mx-auto"
-                src="{{ product.image.url }}"
-                alt="{{ product.name }}"
+                class="thumbnail-image img-fluid mx-1"
+                src="{{ image.image.url }}"
+                alt="{{ product.name }} Thumbnail"
+                data-image="{{ image.image.url }}"
+                width="60"
+                height="60"
+                style="cursor: pointer;"
               />
-            </a>
+              {% endfor %}
+            </div>
+            {% endif %}
             {% else %}
             <a href="{% url 'product_detail' product.id %}">
               <img
@@ -95,14 +115,14 @@
                     </a>
                     {% if not forloop.last %}, {% endif %} {% endfor %}
                   </p>
-                  {% endif %} {% if product.rating %}
+                  {% endif %} 
+                  {% if product.rating %}
                   <small class="text-muted"
                     ><i class="fas fa-star mr-1"></i>{{ product.rating }} /
                     5</small
                   >
                   {% else %}
                   <small class="text-muted">No Rating</small>
-
                   {% endif %}
                 </div>
               </div>
@@ -117,15 +137,18 @@
         <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
           <hr />
         </div>
-        {% endif %} {% if forloop.counter|divisibleby:3 %}
+        {% endif %} 
+        {% if forloop.counter|divisibleby:3 %}
         <div class="col-12 d-none d-lg-block d-xl-none">
           <hr />
         </div>
-        {% endif %} {% if forloop.counter|divisibleby:4 %}
+        {% endif %} 
+        {% if forloop.counter|divisibleby:4 %}
         <div class="col-12 d-none d-xl-block">
           <hr />
         </div>
-        {% endif %} {% endfor %}
+        {% endif %} 
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -166,5 +189,23 @@
             window.location.replace(currentUrl);
         }
 })
+</script>
+
+<script type="text/javascript">
+    document.querySelectorAll('.thumbnail-image').forEach(function(thumbnail) {
+        thumbnail.addEventListener('click', function() {
+            // Change the main image source
+            var newImageSrc = this.getAttribute('data-image');
+            document.getElementById('main-product-image').src = newImageSrc;
+    
+            // Remove 'selected' class from all thumbnails
+            document.querySelectorAll('.thumbnail-image').forEach(function(thumbnail) {
+                thumbnail.classList.remove('selected');
+            });
+    
+            // Add 'selected' class to the clicked thumbnail
+            this.classList.add('selected');
+        });
+    });
 </script>
 {% endblock %}
