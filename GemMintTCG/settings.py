@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
+    'checkout',
 
     # The following apps are required by django-allauth:
     'allauth',
