@@ -13,13 +13,10 @@
       <div class="thumbnail-container my-5">
         {% for image in product.images.all %}
         <img
-          class="thumbnail-image img-fluid mx-1"
+          class="thumbnail-image img-thumbnail mb-2"
           src="{{ image.image.url }}"
-          alt="{{ product.name }} Thumbnail"
+          alt="{{ product.name }} thumbnail"
           data-image="{{ image.image.url }}"
-          width="60"
-          height="60"
-          style="cursor: pointer"
         />
         {% endfor %}
       </div>
@@ -28,8 +25,9 @@
     <div class="col-12 col-md-6 col-lg-4">
       <div class="image-container my-5">
         {% if product.images.all %}
-        <a href="{{ product.image.url }}" target="_blank">
+        <a href="{{ product.images.first.image.url }}" target="_blank">
           <img
+            id="main-product-image"
             class="card-img-top img-fluid"
             src="{{ product.images.first.image.url }}"
             alt="{{ product.name }}"
@@ -38,6 +36,7 @@
         {% else %}
         <a href="{{ MEDIA_URL }}noimage.png" target="_blank">
           <img
+            id="main-product-image"
             class="card-img-top img-fluid"
             src="{{ MEDIA_URL }}noimage.png"
             alt="{{ product.name }}"
@@ -50,7 +49,9 @@
     <div class="col-12 col-md-6 col-lg-4">
       <div class="product-details-container mb-5 mt-md-5">
         <p class="mb-0">{{ product.name }}</p>
-        <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+        <p class="lead mb-0 text-left font-weight-bold">
+          £{{ product.price }}
+        </p>
         {% if product.categories.all %}
         <p class="small mt-1 mb-0">
           {% for category in product.categories.all %}
@@ -76,4 +77,21 @@
     </div>
   </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+<script type="text/javascript">
+  document.querySelectorAll(".thumbnail-image").forEach(function (thumbnail) {
+    thumbnail.addEventListener("click", function () {
+      var newImageSrc = this.getAttribute("data-image");
+      document.getElementById("main-product-image").src = newImageSrc;
+
+      document.querySelectorAll(".thumbnail-image").forEach(function (thumb) {
+        thumb.classList.remove("selected");
+      });
+
+      this.classList.add("selected");
+    });
+  });
+</script>
 {% endblock %}
