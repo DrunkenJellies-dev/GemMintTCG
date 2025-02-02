@@ -25,6 +25,10 @@ def all_products(request):
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
 
+            if sortkey == 'categories':
+                sortkey = 'categories__name' 
+                products = products.prefetch_related('categories')
+
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':

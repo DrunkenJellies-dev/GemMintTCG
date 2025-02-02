@@ -35,8 +35,18 @@
           <p class="lead mb-0 text-left font-weight-bold">
             £{{ product.price }}
           </p>
-
-          {% if product.rating %}
+          {% if product.categories.all %}
+          <p class="small mt-1 mb-0">
+            {% for category in product.categories.all %}
+            <a
+              href="{% url 'products' %}?category={{ category.name }}"
+              class="text-muted"
+            >
+              <i class="fas fa-tag mr-1"></i>{{ category.friendly_name}}
+            </a>
+            {% if not forloop.last %}, {% endif %} {% endfor %}
+          </p>
+          {% endif %} {% if product.rating %}
           <small class="text-muted"
             ><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small
           >
