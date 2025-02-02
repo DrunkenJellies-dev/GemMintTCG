@@ -39,6 +39,19 @@ body {
   color: white;
 }
 
+.btn-outline-black {
+  background: white;
+  color: black !important;
+  border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+  background: black;
+  color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -128,16 +141,15 @@ a.category-badge > span.badge:hover {
 /* Make sure the thumbnails stack properly on smaller screens */
 @media (max-width: 767px) {
   .thumbnail-images {
-      justify-content: flex-start; /* Align left on smaller screens */
-      gap: 5px;
+    justify-content: flex-start; /* Align left on smaller screens */
+    gap: 5px;
   }
 
   .thumbnail-image {
-      width: 50px; /* Smaller thumbnails on mobile */
-      height: 50px;
+    width: 50px; /* Smaller thumbnails on mobile */
+    height: 50px;
   }
 }
-
 
 /* -------------------------------- Media Queries */
 
