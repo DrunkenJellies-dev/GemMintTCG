@@ -3,6 +3,7 @@ from .models import Product, Category
 from django.urls import path
 from django.db.models import Q
 from django.contrib import messages
+from django.db.models.functions import Lower
 
 # Create your views here.
 
