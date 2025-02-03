@@ -1,23 +1,20 @@
 from django import forms
-from .widgets import CustomClearableFileInput
-from .models import Product, Category
-
+from .models import Product, Category, ProductImage
 
 class ProductForm(forms.ModelForm):
+    categories = forms.ModelMultipleChoiceField(
+        queryset=Category.objects.all(),
+        widget=forms.CheckboxSelectMultiple,  
+        required=False
+    )
 
     class Meta:
         model = Product
-        fields = '__all__'
+        fields = ['name', 'sku', 'description', 'has_condition', 'price', 'rating', 'image_url', 'categories']
 
-    image = forms.ImageField(label='Image',
-                             required=False,
-                             widget=CustomClearableFileInput)
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        categories = Category.objects.all()
-        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
-
-        self.fields['category'].choices = friendly_names
-        for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-0'
+    def save(self, commit=True):
+        product = super().save(commit=False)  
+        if commit:
+            product.save()
+            self.save_m2m()  
+        return product
