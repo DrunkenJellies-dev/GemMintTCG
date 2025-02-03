@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-
+from django.contrib.auth.decorators import login_required
 from products.forms import ProductForm
 from .models import Product, Category
 from django.urls import path
@@ -76,6 +76,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+@login_required
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
@@ -102,6 +103,7 @@ def add_product(request):
 
     return render(request, template, context)
 
+@login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
     if not request.user.is_superuser:
@@ -130,6 +132,7 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+@login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
