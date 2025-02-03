@@ -43,10 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+
+    # Created Apps
     'home',
     'products',
     'bag',
     'checkout',
+    'profiles',
 
     # The following apps are required by django-allauth:
     'allauth',
