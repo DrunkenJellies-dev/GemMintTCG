@@ -3,6 +3,12 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+
+    country = forms.ChoiceField(
+        choices=[('', 'Select a country')] + list(Order._meta.get_field('country').choices),
+        required=True
+    )
+    
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
@@ -24,6 +30,7 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
+            'county': 'County, State or Locality',
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
