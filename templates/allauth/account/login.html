@@ -1,10 +1,12 @@
-{% extends "account/base_entrance.html" %}
+{% extends "account/base.html" %}
 {% load i18n %}
 {% load allauth account %}
 {% block head_title %}
-    {% trans "Sign In" %}
+    <hr>
+    <h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
+    <hr>
 {% endblock head_title %}
-{% block content %}
+{% block inner_content %}
     {% element h1 %}
         {% trans "Sign In" %}
     {% endelement %}
@@ -29,10 +31,15 @@
             {% slot actions %}
                 {% element button type="submit" tags="prominent,login" %}
                     {% trans "Sign In" %}
+
                 {% endelement %}
+    <a href="{% url 'home' %}" class="btn btn-outline-black rounded-10">Home</a>
+
             {% endslot %}
+            
         {% endelement %}
     {% endif %}
+
     {% if LOGIN_BY_CODE_ENABLED or PASSKEY_LOGIN_ENABLED %}
         {% element hr %}
         {% endelement %}
@@ -42,17 +49,19 @@
                     {% trans "Sign in with a passkey" %}
                 {% endelement %}
             {% endif %}
+
             {% if LOGIN_BY_CODE_ENABLED %}
                 {% element button href=request_login_code_url tags="prominent,login,outline,primary" %}
                     {% trans "Mail me a sign-in code" %}
                 {% endelement %}
             {% endif %}
+
         {% endelement %}
     {% endif %}
     {% if SOCIALACCOUNT_ENABLED %}
         {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
     {% endif %}
-{% endblock content %}
+{% endblock inner_content %}
 {% block extra_body %}
     {{ block.super }}
     {% if PASSKEY_LOGIN_ENABLED %}
