@@ -6,10 +6,21 @@
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- SEO Meta Description -->
+    <meta name="description" content="GemMint TCG is your one-stop shop for Pokémon TCG cards, booster packs, and rare collectibles. Buy, sell, and trade your favorite Pokémon cards today!">
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="Pokémon TCG, Pokémon cards, buy Pokémon cards, rare Pokémon cards, Pokémon booster packs, trading card game, Pokémon collectibles">
+
+    <!-- Open Graph (OG) for Social Media -->
+    <meta property="og:title" content="GemMint TCG - Pokémon Card Shop">
+    <meta property="og:description" content="Shop Pokémon TCG cards, booster packs, and rare collectibles at GemMint TCG. Find graded cards, holo rares, and exclusive deals.">
+    <meta property="og:image" content="{% static 'images/og-image.jpg' %}">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:type" content="website">
+
     {% endblock %} {% block extra_meta %} {% endblock %} {% block corecss %}
     <link
       rel="stylesheet"

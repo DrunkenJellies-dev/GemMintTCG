@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /account/
+Allow: /
+
+Sitemap: https://www.gemminttcg.com/sitemap.xml
