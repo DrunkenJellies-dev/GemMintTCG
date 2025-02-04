@@ -3,12 +3,11 @@ html {
 }
 
 body {
-  background: url("/media/prismatic_evolutions.webp") no-repeat center
-    center fixed;
+  background: url('/media/prismatic_evolutions.webp') no-repeat center center fixed;
   background-size: cover;
   height: calc(100vh - 164px);
   color: #555;
-  font-family: "Lato";
+  font-family: 'Lato';
 }
 
 /* from Bulma */
@@ -41,7 +40,7 @@ body {
 
 .btn-outline-black {
   background: white;
-  color: black !important;
+  color: black !important; 
   border: 1px solid black;
 }
 
@@ -75,25 +74,18 @@ body {
 }
 
 .overlay {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: white;
-  z-index: -1;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+position: fixed;
+background: white;
+z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
   background: #212529 !important;
   color: #fff !important;
-}
-
-.product-image {
-  width: 100%;
-  height: 350px;
-  object-fit: contain;
-  object-position: center;
 }
 
 .btt-button {
@@ -108,6 +100,10 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
   cursor: pointer;
+}
+
+input[name='q']::placeholder {
+  color: #aab7c4;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -127,49 +123,7 @@ a.category-badge > span.badge:hover {
   height: 2px;
 }
 
-
-.thumbnail-images {
-  display: flex;
-  justify-content: center;
-  gap: 10px; 
-  margin-top: 10px;
-}
-
-
-.thumbnail-image {
-  width: 60px; 
-  height: 60px; 
-  object-fit: cover; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: transform 0.3s ease, border 0.3s ease; 
-}
-
-
-.thumbnail-image:hover {
-  transform: scale(1.1); 
-  border: 2px solid #007bff; 
-}
-
-
-.thumbnail-image.selected {
-  border: 2px solid #007bff; 
-  opacity: 0.7; 
-}
-
-
-@media (max-width: 767px) {
-  .thumbnail-images {
-    justify-content: flex-start; 
-    gap: 5px;
-  }
-
-  .thumbnail-image {
-    width: 50px; 
-    height: 50px;
-  }
-}
-
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
   width: 0; 
   height: 0; 
@@ -181,6 +135,7 @@ a.category-badge > span.badge:hover {
   right: 36px;
 }
 
+/* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
   border-bottom-color: #007bff !important;
 }
@@ -223,9 +178,9 @@ a.category-badge > span.badge:hover {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+.container {
+  max-width: 80%;
+}
 }
 
 /* Allauth form formatting */
@@ -282,27 +237,93 @@ color: #fff;
 color: #17a2b8; /* text-info */
 }
 
+/* Product Form */
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+  border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0;
+}
+
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
   .fixed-top-desktop-only {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
   }
 
   .header-container {
-    padding-top: 164px;
+      padding-top: 164px;
   }
 }
 
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
   .header-container {
-    padding-top: 116px;
+      padding-top: 116px;
   }
 
   body {
-    height: calc(100vh - 116px);
+      height: calc(100vh - 116px);
+  }
+
+  .display-4.logo-font.text-black {
+      font-size: 2rem;
+  }
+
+  .nav-link {
+      padding: 0.15rem;
+  }
+
+  .nav-link i.fa-lg {
+      font-size: 1rem;
+  }
+
+  .navbar-toggler {
+      padding: .6rem .6rem;
+      font-size: 1rem;
+  }
+
+  #delivery-banner h4 {
+      font-size: .9rem;
+  }
+
+  .btn.btn-outline-black.rounded-0,
+  .btn.btn-black.rounded-0 {
+      padding: .375rem .375rem;
+  }
+
+  .btn.btn-outline-black.rounded-0.btn-lg,
+  .btn.btn-black.rounded-0.btn-lg {
+      padding: .375rem .375rem;
+      font-size: .75rem;
+  }
+
+  .increment-qty, .decrement-qty {
+      padding: .25rem .5rem !important;
   }
 }
